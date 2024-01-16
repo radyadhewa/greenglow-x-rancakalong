@@ -16,6 +16,42 @@
 	<link href="{{ asset('css/tiny-slider.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 	<title>GreenGlow</title>
+    <style>
+        .maincontainer{
+            perspective: 1000px;
+            position: relative;
+        }
+        .thecard{   
+            position: absolute;
+            width: 100%;
+            height: 100%;         
+            transform-style: preserve-3d;
+            transition: transform 2s ease;
+            transform-origin: center;
+        }
+        .maincontainer:hover .thecard{
+            transform: rotateY(180deg);
+        }
+        /* .thecard:hover{
+            transform: rotateY(180deg);
+        } */
+        /* .thefront{
+            position: absolute;
+            width: 100%;
+            height: 100%; 
+            backface-visibility: hidden;
+        } */
+        .thefront,
+        .theback{
+            position: absolute;
+            width: 100%;
+            height: 100%; 
+            backface-visibility: hidden;
+        }
+        .theback{
+            transform: rotateY(180deg);
+        }
+    </style>
 </head>
 
 <body>
@@ -59,11 +95,11 @@
 			<div class="row justify-content-between">
 				<div class="col-lg-7">
 					<div class="intro-excerpt">
-						<h1 class="mb-0">Natural Soap <span class="d-block">Nurturing Future</span></h1>
+						<h1 class="mb-0" >Natural Soap <span class="d-block">Nurturing Future</span></h1>
 						<h4 class="mt-0" style="color: whitesmoke;">Rancakalong Village, West Java</h4>
 						<p class="mb-4">Glow with naturally crafted soap made from recycled oil and pure ingredients.</p>
 						<p>
-							<a href="shop" class="btn btn-secondary me-2">Shop GreenGlow</a>
+							<a href="shop" class="btn btn-secondary me-2" >Shop GreenGlow</a>
 							<a href="#explore-first" class="btn btn-white-outline">Explore</a>
 						</p>
 					</div>
@@ -79,11 +115,10 @@
 	<!-- End Hero Section -->
 
 	<!-- Start Product Section -->
-	<div id="explore-first" class="product-section" style="margin-top: 20px;">
+    <div id="explore-first" class="product-section" style="margin-top: 20px;">
 		<div class="container">
 			<div class="row">
-
-				<!-- Start Column 1 -->
+                <!-- Start Column 1 -->
 				<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
 					<h2 class="mb-4 section-title">Crafted with Natural and Pure Ingredients.</h2>
 					<p class="mb-4">GreenGlow supports sustainability by using recycled oil and natural ingredients to produce our products</p>
@@ -92,56 +127,124 @@
 				<!-- End Column 1 -->
 
 				<!-- Start Column 2 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-					<a class="product-item" href="cart.html">
-						<img src="images/produk1.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Soap with Olive Extract</h3>
-						<!-- <strong class="product-price">Rp50.000</strong>
+				<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront">
+                                <a class="product-item" href="cart.html">
+						            <img src="images/produk2.png" class="img-fluid product-thumbnail">
+						            <h3 class="product-title">Natural Dish Soap</h3>
+					            </a>
+                            </div>
+                            <div class="theback">
+                                <div class="product-container" style="background-image: url('images/produk2.png'); border-radius: 5px; position: relative; overflow: hidden;">
+									<div class="overlay" style="background-color: rgba(0, 0, 0, 0.8); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
+									
+									<div class="product-details" style="position: relative; z-index: 1; padding: 20px; color: #fff; text-align: center;">
+										<h4 class="section-title" style="color: white;">Natural Dish Soap with Plant-Based Ingredients</h4>
+										<p class="section-subtitle">Gentle, Effective, and Eco-Friendly Sparkle</p>
+										
+										<div class="ingredients-container" style="text-align: left; margin-top: 20px;">
+											<h5 class="mt-4">Ingredients</h5>
+											<ul class="list-group" style="list-style: none; padding: 0;">
+												<li class="list-group-item" style="background-color: #e9852e;">Sweet Potato</li>
+												<li class="list-group-item" style="background-color: #f8c144;">Orange Extract</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span> -->
-					</a>
+                            </div>
+                        </div>
+                    </div>
 				</div>
 				<!-- End Column 2 -->
 
 				<!-- Start Column 3 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-					<a class="product-item" href="cart.html">
-						<img src="images/produk2.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Dish Soap</h3>
-						<!-- <strong class="product-price">Rp35.000</strong>
+				<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront">
+                                <a class="product-item" href="cart.html">
+						            <img src="images/produk1.png" class="img-fluid product-thumbnail">
+						            <h3 class="product-title">Natural Soap with Olive Extract</h3>
+					            </a>
+                            </div>
+                            <div class="theback">
+                                <div class="product-container" style="background-image: url('images/produk2.png'); border-radius: 5px; position: relative; overflow: hidden;">
+									<div class="overlay" style="background-color: rgba(0, 0, 0, 0.8); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
+									
+									<div class="product-details" style="position: relative; z-index: 1; padding: 20px; color: #fff; text-align: center;">
+										<h4 class="section-title" style="color: white;">Natural Bath Soap with Plant-Based Ingredients</h4>
+										<p class="section-subtitle">Gentle, Effective, and Eco-Friendly Sparkle</p>
+										
+										<div class="ingredients-container" style="text-align: left; margin-top: 20px;">
+											<h5 class="mt-4">Ingredients</h5>
+											<ul class="list-group" style="list-style: none; padding: 0;">
+												<li class="list-group-item" style="background-color: #bfa82f;">Olive</li>
+												<li class="list-group-item" style="background-color: white;">Goat Milk</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span> -->
-					</a>
+                            </div>
+                        </div>
+                    </div>
 				</div>
 				<!-- End Column 3 -->
 
 				<!-- Start Column 4 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-					<a class="product-item" href="cart.html">
-						<img src="images/produk3.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Soap with Goat Milk</h3>
-						<!-- <strong class="product-price">Rp55.000</strong>
+				<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+                    <div class="maincontainer">
+                        <div class="thecard">
+                            <div class="thefront">
+                                <a class="product-item" href="cart.html">
+						            <img src="images/produk3.png" class="img-fluid product-thumbnail">
+						            <h3 class="product-title">Natural Soap with Olive Extract</h3>
+					            </a>
+                            </div>
+                            <div class="theback">
+                                <div class="product-container" style="background-image: url('images/produk2.png'); border-radius: 5px; position: relative; overflow: hidden;">
+									<div class="overlay" style="background-color: rgba(0, 0, 0, 0.8); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div>
+									
+									<div class="product-details" style="position: relative; z-index: 1; padding: 20px; color: #fff; text-align: center;">
+										<h4 class="section-title" style="color: white;">Natural Bath Soap with Plant-Based Ingredients</h4>
+										<p class="section-subtitle">Gentle, Effective, and Eco-Friendly Sparkle</p>
+										
+										<div class="ingredients-container" style="text-align: left; margin-top: 20px;">
+											<h5 class="mt-4">Ingredients</h5>
+											<ul class="list-group" style="list-style: none; padding: 0;">
+												<li class="list-group-item" style="background-color: white">Goat Milk</li>
+												<li class="list-group-item" style="background-color: #cbcbcb;">Kaolin Clay</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span> -->
-					</a>
+                            </div>
+                        </div>
+                    </div>
 				</div>
 				<!-- End Column 4 -->
+
 
 			</div>
 		</div>
 	</div>
 	<!-- End Product Section -->
 
+
 	<!-- Start Why Choose Us Section -->
 	<div class="why-choose-section">
 		<div class="container">
 			<div class="row justify-content-between">
+				<div class="col-lg-5">
+					<!-- Replace the image with the YouTube video iframe -->
+					<div class="video-placeholder" style="border-radius: 15px; overflow: hidden;">
+						<iframe width="100%" height="350" src="https://www.youtube.com/embed/8ZsRryHYBwg" frameborder="20" allowfullscreen></iframe>
+					</div>
+				</div>
 				<div class="col-lg-6">
 					<h2 class="section-title">Why Choose Us</h2>
 					<p>At GreenGlow, our commitment to your well-being and our planet sets us apart in the world of personal care. We believe that the choices we make today impact the world we'll inhabit tomorrow. Here's why choosing GreenGlow is more than a decision; it's a mindful step toward a healthier, more sustainable lifestyle.</p>
@@ -170,16 +273,62 @@
 					</div>
 				</div>
 
-				<div class="col-lg-5">
-					<!-- Replace the image with the YouTube video iframe -->
-					<div class="video-placeholder" style="border-radius: 15px; overflow: hidden;">
-						<iframe width="100%" height="350" src="https://www.youtube.com/embed/8ZsRryHYBwg" frameborder="20" allowfullscreen></iframe>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
 	<!-- End Why Choose Us Section -->
+
+		<!-- Start Rancakalong -->
+
+		<!-- <section style="background-image: url('images/rancakalong-view.jpg'); background-size: cover;border-radius: 5px; position: relative; overflow: hidden;">
+		<div class="overlay" style="background-color: rgba(0, 0, 0, 0.2); position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></div> -->
+		<br><br><br><br><br>
+			<div class="why-choose-section">
+			<div class="container">
+			<div class="card bg-dark text-white" style="border-radius: 5px;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="section-title" style="color: white;">Rancakalong</h2>
+                        <p>Rancakalong is a subdistrict in Sumedang Regency, West Java Province, Indonesia. Situated in the province of West Java, specifically within the administrative region of Sumedang. The subdistrict encompasses an expansive area, spanning 5,270 square kilometers. As a vital part of Sumedang, Rancakalong contributes to the rich cultural and geographical tapestry of the region. Rancakalong is famous for its agricultural yield such as:</p>
+
+                        <ol>
+                            <li>
+                                <strong>Sweet Potato</strong>
+                                GreenGlow uses natural ingredients, making it gentle on your skin and the environment. No harsh chemicals, just pure goodness.
+                            </li>
+                            <li>
+                                <strong>Paddy/Rice</strong>
+                                Crafted with care, our soap brings the goodness of nature to your daily routine. It's more than a soap; it's a touch of natural luxury.
+                            </li>
+                            <li>
+                                <strong>Corn</strong>
+                                By choosing GreenGlow, you're part of a movement towards mindful living. It's a small step that adds up to a greener, brighter future.
+                            </li>
+                        </ol>
+
+                        <a href="rancakalong" class="btn btn-secondary me-2">More About</a>
+
+                        <div class="row my-5">
+                            <!-- Additional content can be added here if needed -->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="card video-placeholder" style="border-radius: 15px; overflow: hidden;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5339.05234681476!2d107.81775192785709!3d-6.836706306804368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d95bb49bccf5%3A0x2d5a7ddecdb772d3!2sRancakalong!5e0!3m2!1sid!2sid!4v1705445677289!5m2!1sid!2sid" width="100%" height="420" frameborder="20" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+			</div>
+		</div>
+		<br><br><br><br><br>
+	</section>
+	<!-- End Rancakalong -->
+
 
 	<!-- Start Testimonial Slider -->
 	<div class="testimonial-section before-footer-section">

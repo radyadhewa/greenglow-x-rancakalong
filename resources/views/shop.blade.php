@@ -136,14 +136,14 @@
 				</script>
 				<!-- End Column 1 -->
 				<div class="col-12 col-md-4 col-lg-3 mb-5">
-					<a class="product-item" href="#" onclick="addToCart()">
+					<a class="product-item" href="#">
 						<img src="images/produk3.png" class="img-fluid product-thumbnail">
 						<h3 class="product-title">Natural Soap with Goat Milk</h3>
 						<strong class="product-price">Rp55.000</strong>
 
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
+						<div class="icon-cross">
+							<img src="images/tokopedia.png" class="img-fluid" onclick="addToCart()">
+				</div>
 					</a>
 				</div>
 				<!-- End Column 3 -->

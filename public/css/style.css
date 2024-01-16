@@ -246,7 +246,9 @@ a {
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
+        transform: translate(-50%, -50%); 
+        object-fit: cover; /* or contain, adjust as needed */
+        object-position: center center;}
     .product-section .product-item:before {
       bottom: 0;
       left: 0;

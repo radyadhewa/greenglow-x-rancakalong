@@ -46,7 +46,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/rancakalong', function () {
-    return view('rancakalong');
+    return view('about_village/rancakalong');
 });
 
 Route::get('/blog', function () {

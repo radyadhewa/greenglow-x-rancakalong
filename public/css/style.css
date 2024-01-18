@@ -7,15 +7,126 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 body {
   overflow-x: hidden;
-  position: relative; }
-
-body {
+  position: relative;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 28px;
   color: #6a6a6a;
   font-size: 14px;
   background-color: #eff2f1; }
+
+
+/* for header section + background */
+header{
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header.transparent-header {
+  background-color: rgba(59, 93, 80, 0);
+}
+
+header.fixed-header {
+  background-color: #1d2d27 !important;
+  transition: background-color 0.3s ease;
+}
+
+.text{
+  position: relative;
+  z-index: 10;
+}
+
+.text h1{
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.text h2{
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 1em;
+}
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+.text button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1em;
+    color: #ffffff;
+    margin-top: 50px;
+    transition: 0.2s;
+    background: rgb(248, 184, 16, 0);
+    border-color: #ffffff;
+}
+
+.text button:hover{
+    letter-spacing: 6px;
+    background: #3b5d50;
+    border-color: #3b5d50;
+}
+
+.showcase{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.showcase.active {
+  right: 300px;
+}
+
+.showcase video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.showcase header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: overlay;
+}
 
 a {
   text-decoration: none;
@@ -31,7 +142,7 @@ a {
     font-weight: 600; }
 
 .custom-navbar {
-  background: #3b5d50 !important;
+  background-color: #3b5d50 !important;
   padding-top: 20px;
   padding-bottom: 20px; }
   .custom-navbar .navbar-brand {
@@ -119,7 +230,6 @@ a {
         font-size: 54px; } }
   .hero p {
     color: rgba(255, 255, 255, 0.5);
-    margin-botom: 30px; }
   .hero .hero-img-wrap {
     position: relative; }
     .hero .hero-img-wrap img {
@@ -164,35 +274,44 @@ a {
   border-radius: 30px;
   color: #ffffff;
   background: #2f2f2f;
-  border-color: #2f2f2f; }
-  .btn:hover {
+  border-color: #2f2f2f;
+}
+.btn:hover {
     color: #ffffff;
     background: #222222;
-    border-color: #222222; }
-  .btn:active, .btn:focus {
+    border-color: #222222;
+  }
+.btn:active, .btn:focus {
     outline: none !important;
     -webkit-box-shadow: none;
-    box-shadow: none; }
-  .btn.btn-primary {
+    box-shadow: none;
+  }
+.btn-primary {
     background: #3b5d50;
-    border-color: #3b5d50; }
-    .btn.btn-primary:hover {
-      background: #314d43;
-      border-color: #314d43; }
-  .btn.btn-secondary {
-    color: #2f2f2f;
-    background: #f9bf29;
-    border-color: #f9bf29; }
-    .btn.btn-secondary:hover {
-      background: #f8b810;
-      border-color: #f8b810; }
-  .btn.btn-white-outline {
+    border-color: #3b5d50;
+  }
+.btn-primary:hover {
+  background: #314d43;
+  border-color: #314d43;
+  }
+.btn-secondary {
+  color: #2f2f2f !important;
+  background: #f9bf29 !important;
+  border-color: #f9bf29 !important;
+  }
+.btn-secondary:hover {
+  background: #f8b810;
+  border-color: #f8b810;
+  }
+.btn.btn-white-outline {
     background: transparent;
     border-width: 2px;
-    border-color: rgba(255, 255, 255, 0.3); }
-    .btn.btn-white-outline:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+.btn.btn-white-outline:hover {
       border-color: white;
-      color: #ffffff; }
+      color: #ffffff;
+  }
 
 .section-title {
   color: #2f2f2f; }
@@ -720,3 +839,18 @@ textarea {
       flex-direction: column;
       justify-content: center;
   }
+
+@media(max-width: 798px){
+    .showcase,
+    .showcase header{
+        padding: 40px;
+    }
+
+    .text h2 {
+        font-size: 3em;
+    }
+
+    .text h3 {
+        font-size: 2em;
+    }
+}

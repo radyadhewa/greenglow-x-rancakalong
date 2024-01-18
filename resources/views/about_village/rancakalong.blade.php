@@ -20,7 +20,7 @@
 </head>
 
 <body>
-	<!-- Start Header/Navigation -->
+	<!-- Start of NavBar -->
 	<header>
 		<nav style="background-color: transparent !important;" class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 			<div class="container">
@@ -45,7 +45,7 @@
 			</div>
 		</nav>
 	</header>
-	<!-- End Header/Navigation -->
+	<!-- End of NavBar -->
 
 	<!-- Start About Village Big Section -->
 	<section class="showcase">
@@ -61,31 +61,16 @@
 				&nbsp;Discover Rancakalong!
 			</button>
 		</div>
-	</section>
-	<!-- <div class="hero">
-		<div class="container">
-			<div class="row justify-content-between">
-				<div class="col-lg-5">
-					<div class="intro-excerpt">
-						<h1>Rancakalong Village</h1>
-						<p class="mb-4">Nestled in the heart of nature, Rancakalong Village offers a serene escape from the hustle and bustle of modern life. Surrounded by lush greenery and embraced by the melodies of chirping birds, this village embodies the essence of tranquility.</p>
-						<p>
-							<a href="shop" class="btn btn-secondary me-2">Shop GreenGlow</a>
-							<a href="rancakalong" class="btn btn-white-outline">Our Product</a>
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-7">
-					<div class="hero-img-wrap">
-						<!-- <img src="images/rancakalong.png" class="img-fluid" style="width: 500px; max-width: 100%; margin: 0 auto;"> -->
-					</div>
-				</div>
-			</div>
+
+		<div style="margin: 10 auto; margin-bottom: 20px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 10;">
+				<img src="images\scroll-down.png" alt="scroll" style="height: 25px; margin: 0 auto; filter: brightness(0) invert(1) grayscale(1);">
 		</div>
-	</div> -->
-	<!-- End Hero Section -->
 
-
+		<div style="margin: 10 auto; margin-bottom: 35px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 10;">
+				<p class="text">Scroll Down to See More!</p>
+		</div>
+	</section>
+	<!-- End About Village Section -->
 
 	<!-- Start Why Choose Us Section -->
 	<div class="why-choose-section">

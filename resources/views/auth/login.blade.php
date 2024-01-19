@@ -31,7 +31,7 @@
 			</button>
 			<div class="navbar" id="navbarsFurni">
 				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-					<li><a class="nav-link" href="regist" style="font-size: large;">Register</a></li>
+					<li><a class="nav-link" href="{{ route ('register.form')}}" style="font-size: large;">Register</a></li>
 				</ul>
 			</div>
 		</div>
@@ -49,23 +49,23 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-4">
 					<div class="card bg-dark text-center p-5">
-						<form action="index" method="post">
+						<form action="{{ route ('login.store')}}" method="POST">
 							@csrf
 							<?php
 
 							use Illuminate\Support\Facades\Session;
 							// Get values from the session or any other source
-							$usernameFromSession = Session::get('Username');
+							$emailFromSession = Session::get('email');
 							?>
 							<div class="form-group mb-3 mt-3">
 								<div class="input-group input-group-alternative">
-									<input class="form-control" placeholder="Username" name="Username" type="text" required value="<?= $usernameFromSession ?>" />
+									<input class="form-control" placeholder="Email" name="email" type="text" required value="<?= $emailFromSession ?>" />
 								</div>
 
 							</div>
 							<div class="form-group">
 								<div class="input-group input-group-alternative">
-									<input class="form-control" placeholder="Password" name="Password" type="password" required />
+									<input class="form-control" placeholder="Password" name="password" type="password" required />
 								</div>
 							</div>
 							<div class="text-center mt-4">

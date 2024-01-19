@@ -79,7 +79,7 @@ window.addEventListener('scroll', function() {
 
 	// Adjust the scroll threshold as needed
 	if (scrollPosition > 50) {
-			header.style.backgroundColor = 'rgba(51, 51, 51, 1)'; /* Opaque background */
+			header.style.backgroundColor = 'rgba(29, 45, 39, 1)'; /* Opaque background */
 	} else {
 			header.style.backgroundColor = 'rgba(51, 51, 51, 0)'; /* Transparent background */
 	}

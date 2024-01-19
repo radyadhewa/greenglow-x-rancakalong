@@ -5,6 +5,11 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   position: relative;
@@ -85,8 +90,6 @@ header.fixed-header {
   width: 100%;
   min-height: 100vh;
   padding: 100px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #111;
   color: #fff;
@@ -120,6 +123,32 @@ header.fixed-header {
   justify-content: space-between;
 }
 
+@keyframes jiggle {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+}
+
+.scroll-down-img {
+  height: 20px;
+  margin: 0 auto;
+  filter: brightness(0) invert(1) grayscale(1);
+  animation: jiggle 1.5s infinite;
+}
+
+.scroll-down-container {
+  margin: 10 auto;
+  margin-bottom: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -127,6 +156,30 @@ header.fixed-header {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.village{
+    background-image: linear-gradient(180deg,#E1EEE2 1%, #eff2f1 100%);
+    min-height: 100vh;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.village img{
+
+}
+
+.area-tentang {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {

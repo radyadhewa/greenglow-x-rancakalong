@@ -3,75 +3,70 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Providers\RouteServiceProvider;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Auth\Events\Registered;
 
 
 class SessionController extends Controller
 {
-    function index()
+    // PROSES PEMANGGILAN FORM AWAL
+    function LoginForm()
     {
-        return view("login");
+        return view("auth.login");
+    }
+    function RegisterForm()
+    {
+        return view('auth.regist');
     }
 
     function login(Request $request)
     {
-        Session::flash('Username', $request->Username);
+        Session::flash('email', $request->email);
         $request->validate([
-            'Username' => 'required',
-            'Password' => 'required'
+            'email' => 'required',
+            'password' => 'required'
         ], [
-            'Username.required' => 'Username wajib diisi',
-            'Password.required' => 'Password wajib diisi',
+            'email.required' => 'Email wajib diisi',
+            'password.required' => 'Password wajib diisi',
         ]);
 
-        $infologin = [
-            'Username' => $request->username,
-            'Password' => $request->password
-        ];
-
-        if (Auth::attempt($infologin)) {
-            // kalau sukses
-            return redirect('index');
-            // return 'sukses';
-        } else {
-            // kalau gagal
-            // return 'gagal';
-            return redirect('index');
+        $validasi = $request-> only('email', 'password');
+        if (Auth::attempt($validasi)) {
+            return redirect(RouteServiceProvider::HOME);
         }
+
+        return redirect()->back()->with('error', 'Invalid Credentials');
     }
 
-    function register()
+    function register(Request $request)
     {
-        return view('regist');
-    }
-    function create(Request $request)
-    {
-        Session::flash('Username', $request->Username);
-        Session::flash('Email', $request->Email);
-        $request->validate([
-            'Username' => 'required',
-            'Email' => 'required|email|unique:users',
-            'Password' => 'required|min:6'
+
+        $request->validate([ 
+            'name' => 'required',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:6'
         ], [
-            'Username.required' => 'Nama wajib diisi',
-            'Email.required' => 'Email wajib diisi',
-            'Email.Email' => 'Silakan masukkan Email yang valid',
-            'Email.unique' => 'Email sudah pernah digunakan, silakan pilih email yang lain',
-            'Password.required' => 'Password wajib diisi',
-            'Password.min' => 'Minimum password yang diizinkan adalah 6 karakter'
+            'name.required' => 'Nama wajib diisi',
+            'email.required' => 'Email wajib diisi',
+            'email.Email' => 'Silakan masukkan Email yang valid',
+            'email.unique' => 'Email sudah pernah digunakan, silakan pilih email yang lain',
+            'password.required' => 'Password wajib diisi',
+            'password.min' => 'Minimum password yang diizinkan adalah 6 karakter'
         ]);
 
-        $data = [
-            'Username' => $request->Username,
-            'Email' => $request->Email,
-            'Password' => Hash::make($request->Password)
-        ];
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password)
+         ]);
 
-        return redirect('/');
+         event(new Registered($user));
 
-        // User::create($data);
+         return redirect()->route('login');
     }
 }

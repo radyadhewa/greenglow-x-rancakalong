@@ -9,13 +9,13 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
+    public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id()->unique();
-            $table->string('Username');
-            $table->string('Email');
-            $table->string('Password');
+        Schema::create('produk', function (Blueprint $table) {
+            $table->id();
+            $table->string('nama');
+            $table->string('harga');
+            $table->text('gambar')->nullable();
             $table->timestamps();
         });
     }
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('produk');
     }
 };

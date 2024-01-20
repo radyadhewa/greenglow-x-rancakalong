@@ -72,22 +72,29 @@
 	</section>
 	<!-- End About Village Section -->
 
-<!-- Start VisiMisi -->
-<div class="village" id="visimisi">
-    <img src="images/video.png" alt="" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="200"
-		style="height: 50px; animation-name: tentang; animation-duration: 2s; animation-iteration-count: infinite; animation-timing-function: linear;">
-    <div class="text" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-      <h1>About Us</h1>
-      <p>
-        Century Bakery was Founded in 1920 in Indonesia with The Motto of the Best Service and Quality, we always
-        choose
-        the Best Ingredients. We make dishes with local Ingredients, We make them by Hand and with Love. 23 Outlet
-        have
-        been opened in Indonesia with 763 employes. Many Companies and People have trusted us.
-      </p>
-      <p>. . .</p>
-    </div>
-  </div>
+	<!-- Start VisiMisi -->
+	<section style="min-height: 100vh">
+	<div class="village" id="visimisi">
+		<div style="padding-top: 125px; padding-left: 350px; padding-right: 50px">
+			<div class="text" style="flex: 1;">
+				<h1 style="color: #3B5D50;">Our</h1>
+				<h1 style="color: #6C8F81;">&emsp;&nbsp;Vision</h1>
+				<h1 style="margin-top:-50px; border-radius: 50%; color:#374B43">&emsp;&emsp;&ensp;&nbsp;. . .</h1>
+			</div>
+		</div>
+		<div>
+			<div style="flex: 1; justify-content: flex-end; margin-top: 30px;">
+				<img src="images\PakWawanKades.png" alt="kades">
+			</div>
+		</div>
+	</div>
+	<div style="padding: 25px 350px;" class="text">
+		<p style="color: #374B43">"TERWUJUDNYA DESA RANCAKALONG YANG AMAN, SEHAT, CERDAS, BERDAYA SAING, BERBUDAYA DAN BERAKHLAK MULIA"</p>
+	</div>
+	</section>
+	<!-- End VisiMisi -->
+
+
 	<!-- Start Why Choose Us Section -->
 	<div class="why-choose-section">
 		<div class="container">

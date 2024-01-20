@@ -5,6 +5,7 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,200&display=swap");
 
 html{
   scroll-behavior: smooth;
@@ -18,7 +19,8 @@ body {
   line-height: 28px;
   color: #6a6a6a;
   font-size: 14px;
-  background-color: #eff2f1; }
+  background-color: #eff2f1;
+}
 
 
 /* for header section + background */
@@ -46,7 +48,7 @@ header.fixed-header {
 }
 
 .text h1{
-  font-weight: 700;
+  font-size: 6em;
   color: #ffffff;
   margin-bottom: 30px;
 }
@@ -123,6 +125,7 @@ header.fixed-header {
   justify-content: space-between;
 }
 
+/* for moving images */
 @keyframes jiggle {
   0%, 100% {
       transform: translateY(0);
@@ -158,21 +161,35 @@ header.fixed-header {
   background: rgba(0, 0, 0, 0.5);
 }
 
+/* for about village section */
 .village{
-    background-image: linear-gradient(180deg,#E1EEE2 1%, #eff2f1 100%);
-    min-height: 100vh;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-image: linear-gradient(180deg,#E1EEE2 50%, #eff2f1 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.village h1{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  margin-bottom: 0px !important;
+}
+
+.village h2{
+  font-weight: semi-bold;
+}
+
+.village p{
+  margin: 10px !important;
 }
 
 .village img{
-
+  flex: 1;
+  width: 50%;
+  -webkit-mask-image:-webkit-gradient(linear, right top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.5)));
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 .area-tentang {

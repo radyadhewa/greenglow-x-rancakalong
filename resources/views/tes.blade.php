@@ -424,7 +424,7 @@
 		</div>
 	</div>
 	<!-- End Testimonial Slider -->
-
+	
 	<!-- Start Blog Section -->
 	<div class="blog-section">
 		<div class="container">

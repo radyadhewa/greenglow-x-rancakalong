@@ -63,7 +63,9 @@
 		</div>
 
 		<div class="scroll-down-container">
+			<a href="{{ url('#visimisi') }}">
 				<img src="images\scroll-down.png" alt="scroll" class="scroll-down-img" data-src="images\scroll-down.png" data-loaded="true">
+			</a>
 		</div>
 
 		<div style="margin: 10 auto; margin-bottom: 35px; position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 10;">
@@ -73,8 +75,8 @@
 	<!-- End About Village Section -->
 
 	<!-- Start VisiMisi -->
-	<section style="min-height: 100vh">
-	<div class="village" id="visimisi">
+	<section style="min-height: 100vh;" id="visimisi">
+	<div class="village">
 		<div style="padding-top: 125px; padding-left: 350px; padding-right: 50px">
 			<div class="text" style="flex: 1;">
 				<h1 style="color: #3B5D50; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);">Our</h1>

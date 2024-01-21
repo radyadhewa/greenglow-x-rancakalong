@@ -166,6 +166,7 @@ header.fixed-header {
 .village{
   font-family: 'Plus Jakarta Sans' !important;
   background-image: linear-gradient(180deg,#E1EEE2 50%, #eff2f1 100%);
+  padding-top: 70px;
   display: flex;
   justify-content: center;
 }

@@ -12,9 +12,12 @@
 
 	<!-- Bootstrap CSS -->
 	<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+	{{-- <link href="{{ asset('css/bs.min.css') }}" rel="stylesheet"> --}}
+
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 	<link href="{{ asset('css/tiny-slider.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+	{{-- <link href="{{ asset('css/style2.css') }}" rel="stylesheet"> --}}
 	<title>GreenGlow - Shop</title>
 </head>
 
@@ -107,28 +110,28 @@
 			</div> -->
 	<!-- End Hero Section -->
 
-	<section class="ftco-section bg-light">
+	<section class="ftco-section bg-light-new">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
+			<div class="row-new">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-1.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
 							<div class="d-flex mb-3">
-								<p class="price ml-auto">$500 <span>/day</span></p>
+								<p class="price ml-auto">$500</p>
 							</div>
 							<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a
 									href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-2.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
@@ -140,10 +143,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-3.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -156,10 +159,10 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-4.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -171,10 +174,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-5.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
@@ -186,10 +189,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-6.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -202,10 +205,10 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-7.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -217,10 +220,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-8.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
@@ -232,10 +235,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-9.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -248,10 +251,10 @@
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-10.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -263,10 +266,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-11.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Range Rover</a></h2>
@@ -278,10 +281,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4-new">
 					<div class="car-wrap rounded ftco-animate">
 						<div class="img rounded d-flex align-items-end"
-							style="background-image: url(images/car-12.jpg);">
+							style="background-image: url(images/produk1.png);">
 						</div>
 						<div class="text">
 							<h2 class="mb-0"><a href="car-single.html">Mercedes Grand Sedan</a></h2>
@@ -294,8 +297,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="row mt-5">
-				<div class="col text-center">
+			<div class="row-new mt-5">
+				<div class="col-new text-center">
 					<div class="block-27">
 						<ul>
 							<li><a href="#">&lt;</a></li>
@@ -409,8 +412,10 @@
 
 
 	<script src="{{ asset ('js/bootstrap.bundle.min.js')}}"></script>
+	{{-- <script src="{{ asset ('js/bs.min.js')}}"></script> --}}
 	<script src="{{ asset ('js/tiny-slider.js')}}"></script>
 	<script src="{{ asset ('js/custom.js')}}"></script>
+	{{-- <script src="{{ asset ('js/ucuk.js')}}"></script> --}}
 </body>
 
 </html>

@@ -6389,6 +6389,8 @@ fieldset:disabled .btn {
     display: table-cell !important;
 }
 .d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
 }
 .d-inline-flex {
@@ -6666,6 +6668,7 @@ fieldset:disabled .btn {
     align-items: flex-start !important;
 }
 .align-items-end {
+    -ms-flex-align: end !important;
     align-items: flex-end !important;
 }
 .align-items-center {
@@ -7350,6 +7353,41 @@ fieldset:disabled .btn {
     border-bottom-left-radius: 0.25rem !important;
     border-top-left-radius: 0.25rem !important;
 }
+
+.rounded-sm {
+border-radius: 0.2rem !important; }
+
+.rounded {
+border-radius: 0.25rem !important; }
+
+.rounded-top {
+border-top-left-radius: 0.25rem !important;
+border-top-right-radius: 0.25rem !important; }
+
+.rounded-right {
+border-top-right-radius: 0.25rem !important;
+border-bottom-right-radius: 0.25rem !important; }
+
+.rounded-bottom {
+border-bottom-right-radius: 0.25rem !important;
+border-bottom-left-radius: 0.25rem !important; }
+
+.rounded-left {
+border-top-left-radius: 0.25rem !important;
+border-bottom-left-radius: 0.25rem !important; }
+
+.rounded-lg {
+border-radius: 0.3rem !important; }
+
+.rounded-circle {
+border-radius: 50% !important; }
+
+.rounded-pill {
+border-radius: 50rem !important; }
+
+.rounded-0 {
+border-radius: 0 !important; }
+
 .visible {
     visibility: visible !important;
 }
@@ -9881,4 +9919,41 @@ fieldset:disabled .btn {
     .d-print-none {
         display: none !important;
     }
+}
+
+.col-md-4-new{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%
+}
+
+.row-new {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.bg-light-new {
+    background-color: #f8f9fa !important
+}
+
+.col-new {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%
 }

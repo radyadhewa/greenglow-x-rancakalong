@@ -77,19 +77,27 @@
 	<div class="village" id="visimisi">
 		<div style="padding-top: 125px; padding-left: 350px; padding-right: 50px">
 			<div class="text" style="flex: 1;">
-				<h1 style="color: #3B5D50;">Our</h1>
+				<h1 style="color: #3B5D50; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);">Our</h1>
 				<h1 style="color: #6C8F81;">&emsp;&nbsp;Vision</h1>
-				<h1 style="margin-top:-50px; border-radius: 50%; color:#374B43">&emsp;&emsp;&ensp;&nbsp;. . .</h1>
+				<h1 style="margin-top:-50px; border-radius: 50%; color:#f9bf29">&emsp;&emsp;&ensp;&nbsp;. . .</h1>
 			</div>
 		</div>
 		<div>
 			<div style="flex: 1; justify-content: flex-end; margin-top: 30px;">
 				<img src="images\PakWawanKades.png" alt="kades">
+				<h2 style="color: #3D4A3E;">&nbsp;&nbsp;&nbsp; H. Wawan Suwandi, SE.MM.MSi.</h2>
+				<h3>&nbsp;&nbsp;&nbsp;&nbsp; as our "Kepala Desa"</h3>
 			</div>
 		</div>
 	</div>
-	<div style="padding: 25px 350px;" class="text">
-		<p style="color: #374B43">"TERWUJUDNYA DESA RANCAKALONG YANG AMAN, SEHAT, CERDAS, BERDAYA SAING, BERBUDAYA DAN BERAKHLAK MULIA"</p>
+	<div class="visimisi">
+		<p style="color: #374B43">"We aspire to grow Rancakalong Village into a safe place yet healthy living environment for people to reside in, fostering intelligence, competitiveness, cultural richness, and virtuous value among our community."</p>
+		<div class="learn-more">
+			<a
+				href="https://jadesta.kemenparekraf.go.id/desa/rancakalong_1" target="_blank" class="btn btn-primary">Learn more about Rancakalong Village!
+				<img src="images\right-arrow-ylw.png" alt="video" style="width: 18px;">
+			</a>
+		</div>
 	</div>
 	</section>
 	<!-- End VisiMisi -->
@@ -302,16 +310,12 @@
 
 						<div class="col-6 col-sm-6 col-md-3">
 							<ul class="list-unstyled">
-								<li><a href="about">About Us</a></li>
-								<li><a href="contact">Contact Us</a></li>
-							</ul>
-						</div>
+								<li><a href="abou	</ul>
+
 					</div>
 				</div>
 
-			</div>
-
-			<div class="border-top copyright">
+			<div class="border-top copyright"
 				<div class="row pt-4">
 					<div class="col-lg-6">
 						<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>

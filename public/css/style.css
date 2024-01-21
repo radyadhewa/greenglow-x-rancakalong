@@ -49,6 +49,7 @@ header.fixed-header {
 
 .text h1{
   font-size: 6em;
+  font-weight: 900;
   color: #ffffff;
   margin-bottom: 30px;
 }
@@ -163,24 +164,34 @@ header.fixed-header {
 
 /* for about village section */
 .village{
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans' !important;
   background-image: linear-gradient(180deg,#E1EEE2 50%, #eff2f1 100%);
   display: flex;
   justify-content: center;
 }
 
 .village h1{
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 800;
+  font-family: 'Plus Jakarta Sans' !important;
+  font-weight: 900;
   margin-bottom: 0px !important;
 }
 
 .village h2{
-  font-weight: semi-bold;
+  font-weight: 800;
+  font-size: 20px;
+  align-items: center;
+  text-align: justify;
+}
+
+.village h3{
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 16px;
 }
 
 .village p{
-  margin: 10px !important;
+  font-size: 28px;
+  font-style: semi-bold;
 }
 
 .village img{
@@ -190,6 +201,30 @@ header.fixed-header {
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
   overflow-clip-margin: content-box;
   overflow: clip;
+}
+
+.visimisi p{
+  font-family: 'Plus Jakarta Sans';
+  padding: 30px 350px;
+  align-items:center;
+  line-height: 34px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.learn-more {
+  float: right;
+  margin-top: -15px;
+  margin-right: 350px;
+  text-align: right;
+  text-decoration: none;
+  color: #3B5D50;
+}
+
+.learn-more a{
+  font-weight: 500;
+  font-size: 13px;
 }
 
 .area-tentang {
@@ -358,9 +393,11 @@ a {
     box-shadow: none;
   }
 .btn-primary {
-    background: #3b5d50;
-    border-color: #3b5d50;
+    color: #3b5d50 !important;
+    background: #3b5d50 !important;
+    border-color: #3b5d50 !important;
   }
+
 .btn-primary:hover {
   background: #314d43;
   border-color: #314d43;

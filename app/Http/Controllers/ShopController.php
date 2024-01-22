@@ -11,7 +11,8 @@ class ShopController extends Controller
         return view('cart');
     }
     public function shop(){
-        $produk = Product::all();
+        $produk = Product::latest()
+        -> get();
         //compact itu nge read data dari tabel produk
         return view('Shop.shop', compact(['produk']));
     }

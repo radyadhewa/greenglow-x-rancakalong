@@ -118,7 +118,8 @@ class ProductResource extends Resource
                 TextColumn::make('harga')
                 -> sortable()
                 -> toggleable()
-                -> toggleable(),
+                -> toggleable()
+                -> money('IDR'),
                 TextColumn::make('stok')
                 -> sortable()
                 -> toggleable()

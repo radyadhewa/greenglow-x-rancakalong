@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Produk;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ShopController extends Controller
@@ -11,7 +11,8 @@ class ShopController extends Controller
         return view('cart');
     }
     public function shop(){
-        $produk = Produk::all();
+        $produk = Product::latest()
+        -> get();
         //compact itu nge read data dari tabel produk
         return view('Shop.shop', compact(['produk']));
     }

@@ -23,7 +23,7 @@
 	};
 	tinyslider();
 
-	
+
 
 
 	var sitePlusMinus = function() {
@@ -63,11 +63,59 @@
 
 	        quantityAmount.value = value;
 	    }
-	    
+
 	    init();
-		
+
 	};
 	sitePlusMinus();
 
 
-})()
+})
+
+// script.js
+window.addEventListener('scroll', function() {
+	var header = document.querySelector('header');
+	var scrollPosition = window.scrollY;
+
+	// Adjust the scroll threshold as needed
+	if (scrollPosition > 50) {
+			header.style.backgroundColor = 'rgba(29, 45, 39, 1)'; /* Opaque background */
+	} else {
+			header.style.backgroundColor = 'rgba(51, 51, 51, 0)'; /* Transparent background */
+	}
+});
+
+// Add bg color on navbar when scroll
+document.addEventListener("DOMContentLoaded", function () {
+  console.log('Document is ready.');
+
+  var header = document.querySelector('header');
+  var navHeight = document.querySelector('.custom-navbar').offsetHeight;
+
+  function updateHeader() {
+    console.log('Updating header...');
+    if (window.scrollY > navHeight) {
+      header.classList.add('fixed-header');
+      header.classList.remove('transparent-header');
+    } else {
+      header.classList.remove('fixed-header');
+      header.classList.add('transparent-header');
+    }
+  }
+
+  // Initial call to set header transparency based on initial scroll position
+  updateHeader();
+
+  // Event listener for scroll events
+  window.addEventListener('scroll', function () {
+    updateHeader();
+  });
+});
+
+
+// Play youtube video when button click
+function play1() {
+	var videoUrl = "https://www.youtube.com/embed/8ZsRryHYBwg?si=EAt1gVMRD3a1qunq";
+
+	window.open(videoUrl, "YouTube Video");
+}

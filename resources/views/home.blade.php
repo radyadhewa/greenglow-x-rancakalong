@@ -24,7 +24,7 @@
 	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 		<div class="container">
-			<a class="navbar-brand" href="/index">GreenGlow X Rancakalong<span>.</span></a>
+			<a class="navbar-brand" href="home">GreenGlow X Rancakalong<span>.</span></a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -33,14 +33,14 @@
 			<div class="collapse navbar-collapse" id="navbarsFurni">
 				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
 					<li class="nav-item active">
-						<a class="nav-link" href="/index">Home</a>
+						<a class="nav-link" href="home">Home</a>
 					</li>
 					<li><a class="nav-link" href="shop">Shop</a></li>
 					<li><a class="nav-link" href="about">About GreenGlow</a></li>
 					<li><a class="nav-link" href="rancakalong">About Rancakalong</a></li>
 					<li><a class="nav-link" href="blog">Edu</a></li>
 					<li><a class="nav-link" href="contact">Contact us</a></li>
-					<li><a class="nav-link" href="/">Logout</a></li>
+					<li><a class="nav-link" href="login">Logout</a></li>
 				</ul>
 
 				<!-- <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
@@ -373,7 +373,7 @@
 
 			<div class="row g-5 mb-5">
 				<div class="col-lg-4">
-					<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">GreenGlow<span>.</span></a></div>
+					<div class="mb-4 footer-logo-wrap"><a href="{{ route('home') }}" class="footer-logo">GreenGlow<span>.</span></a></div>
 					<p class="mb-4">Embraces a zero-waste ethos by offering a range of beauty and soap products made from natural ingredients, packaged in materials sourced from recycling. With a commitment to sustainability, the project seeks to minimize environmental impact by avoiding synthetic additives and utilizing recycled packaging. </p>
 
 					<ul class="list-unstyled custom-social">
@@ -388,22 +388,22 @@
 					<div class="row links-wrap">
 						<div class="col-6 col-sm-6 col-md-3">
 							<ul class="list-unstyled">
-								<li><a href="/">Home</a></li>
-								<li><a href="about">About GreenGlow</a></li>
+								<li><a href="{{ route('home') }}">Home</a></li>
+								<li><a href="{{ route('about') }}">About GreenGlow</a></li>
 							</ul>
 						</div>
 
 						<div class="col-6 col-sm-6 col-md-3">
 							<ul class="list-unstyled">
-								<li><a href="shop">Shop</a></li>
-								<li><a href="rancakalong">Our Partner</a></li>
+								<li><a href="{{ route('shop') }}">Shop</a></li>
+								<li><a href="{{ route('rancakalong') }}">Our Partner</a></li>
 							</ul>
 						</div>
 
 						<div class="col-6 col-sm-6 col-md-3">
 							<ul class="list-unstyled">
-								<li><a href="about">About Us</a></li>
-								<li><a href="contact">Contact Us</a></li>
+								<li><a href="{{ route('about') }}">About Us</a></li>
+								<li><a href="{{ route('contact') }}">Contact Us</a></li>
 							</ul>
 						</div>
 					</div>

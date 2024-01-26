@@ -21,7 +21,7 @@ use Illuminate\Contracts\Session\Session;
 
 //Bagian Permasalahan Login dan Register
 // ADA BAGIAN YANG KUHAPUS YA GES KARENA SUDAH DIWAKILKAN SAMA YANG INI
-// DAN KALAU KULIAT ITU DI 
+// DAN KALAU KULIAT ITU DI
 
 Route::get('/', [SessionController::class, 'LoginForm'])->name('login');
 
@@ -58,8 +58,8 @@ Route::get('/cart', [ShopController::class, 'cart'])-> name('cart');
 
 //========================================================================================//
 // INI FITUR TENTANG SHOP
-Route::get('/shop', [ShopController::class, 'shop']);
-Route::get('/shop{slug}', [ShopController::class, 'detail']);
+Route::get('/shop', [ShopController::class, 'shop']) -> name('shop');
+Route::get('/shop{slug}', [ShopController::class, 'detail']) -> name('detail');
 
 //========================================================================================//
 // INI FITUR Masukin Data Buat Admin

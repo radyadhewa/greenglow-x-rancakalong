@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,200&display=swap");
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -58,10 +59,10 @@
         rgba(255, 255, 255, 0.15),
         rgba(255, 255, 255, 0)
     );
-    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-family: 'Plus Jakarta Sans' !important;;
     --bs-body-font-size: 1rem;
-    --bs-body-font-weight: 400;
-    --bs-body-line-height: 1.5;
+    --bs-body-font-weight: 600;
+    --bs-body-line-height: 34px;;
     --bs-body-color: #212529;
     --bs-body-bg: #fff;
 }
@@ -77,10 +78,10 @@
 }
 body {
     margin: 0;
-    font-family: var(--bs-body-font-family);
+    font-family: 'Plus Jakarta Sans' !important;;
     font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
+    font-weight: 600;;
+    line-height: 34px;;
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
     background-color: var(--bs-body-bg);
@@ -111,8 +112,8 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 34px;;
 }
 .h1,
 h1 {
@@ -177,7 +178,7 @@ abbr[title] {
 address {
     margin-bottom: 1rem;
     font-style: normal;
-    line-height: inherit;
+    line-height: 34px;;
 }
 ol,
 ul {
@@ -196,7 +197,7 @@ ul ul {
     margin-bottom: 0;
 }
 dt {
-    font-weight: 700;
+    font-weight: 600;
 }
 dd {
     margin-bottom: 0.5rem;
@@ -222,7 +223,7 @@ sub,
 sup {
     position: relative;
     font-size: 0.75em;
-    line-height: 0;
+    line-height: 34px;
     vertical-align: baseline;
 }
 sub {
@@ -247,7 +248,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: var(--bs-font-monospace);
+    font-family: 'Plus Jakarta Sans' !important;;
     font-size: 1em;
     direction: ltr;
     unicode-bidi: bidi-override;
@@ -282,7 +283,7 @@ kbd {
 kbd kbd {
     padding: 0;
     font-size: 1em;
-    font-weight: 700;
+    font-weight: 600;
 }
 figure {
     margin: 0 0 1rem;
@@ -330,9 +331,9 @@ optgroup,
 select,
 textarea {
     margin: 0;
-    font-family: inherit;
+    font-family: 'Plus Jakarta Sans' !important;;
     font-size: inherit;
-    line-height: inherit;
+    line-height: 34px;
 }
 button,
 select {
@@ -381,7 +382,7 @@ legend {
     padding: 0;
     margin-bottom: 0.5rem;
     font-size: calc(1.275rem + 0.3vw);
-    line-height: inherit;
+    line-height: 34px;
 }
 @media (min-width: 1200px) {
     legend {
@@ -441,12 +442,12 @@ progress {
 }
 .lead {
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 600;
 }
 .display-1 {
     font-size: calc(1.625rem + 4.5vw);
-    font-weight: 300;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 34px;
 }
 @media (min-width: 1200px) {
     .display-1 {
@@ -455,8 +456,8 @@ progress {
 }
 .display-2 {
     font-size: calc(1.575rem + 3.9vw);
-    font-weight: 300;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 34px;
 }
 @media (min-width: 1200px) {
     .display-2 {
@@ -465,8 +466,8 @@ progress {
 }
 .display-3 {
     font-size: calc(1.525rem + 3.3vw);
-    font-weight: 300;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 34px;
 }
 @media (min-width: 1200px) {
     .display-3 {
@@ -475,8 +476,8 @@ progress {
 }
 .display-4 {
     font-size: calc(1.475rem + 2.7vw);
-    font-weight: 300;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 34px;
 }
 @media (min-width: 1200px) {
     .display-4 {
@@ -485,8 +486,8 @@ progress {
 }
 .display-5 {
     font-size: calc(1.425rem + 2.1vw);
-    font-weight: 300;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 34px;
 }
 @media (min-width: 1200px) {
     .display-5 {
@@ -495,8 +496,8 @@ progress {
 }
 .display-6 {
     font-size: calc(1.375rem + 1.5vw);
-    font-weight: 300;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 34px;
 }
 @media (min-width: 1200px) {
     .display-6 {
@@ -554,7 +555,7 @@ progress {
 }
 .figure-img {
     margin-bottom: 0.5rem;
-    line-height: 1;
+    line-height: 34px;
 }
 .figure-caption {
     font-size: 0.875em;
@@ -1829,7 +1830,7 @@ progress {
     padding-bottom: calc(0.375rem + 1px);
     margin-bottom: 0;
     font-size: inherit;
-    line-height: 1.5;
+    line-height: 34px;
 }
 .col-form-label-lg {
     padding-top: calc(0.5rem + 1px);
@@ -1851,8 +1852,8 @@ progress {
     width: 100%;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 600;
+    line-height: 34px;
     color: #212529;
     background-color: #fff;
     background-clip: padding-box;
@@ -1980,7 +1981,7 @@ progress {
     width: 100%;
     padding: 0.375rem 0;
     margin-bottom: 0;
-    line-height: 1.5;
+    line-height: 34px;
     color: #212529;
     background-color: transparent;
     border: solid transparent;
@@ -2070,8 +2071,8 @@ textarea.form-control-lg {
     padding: 0.375rem 2.25rem 0.375rem 0.75rem;
     -moz-padding-start: calc(0.75rem - 3px);
     font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 600;
+    line-height: 34px;
     color: #212529;
     background-color: #fff;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
@@ -2322,7 +2323,7 @@ textarea.form-control-lg {
 .form-floating > .form-control,
 .form-floating > .form-select {
     height: calc(3.5rem + 2px);
-    line-height: 1.25;
+    line-height: 34px;
 }
 .form-floating > label {
     position: absolute;
@@ -2410,8 +2411,8 @@ textarea.form-control-lg {
     align-items: center;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 600;
+    line-height: 34px;
     color: #212529;
     text-align: center;
     white-space: nowrap;
@@ -2653,8 +2654,8 @@ textarea.form-control.is-invalid {
 }
 .btn {
     display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 600;
+    line-height: 34px;
     color: #212529;
     text-align: center;
     text-decoration: none;
@@ -3275,7 +3276,7 @@ fieldset:disabled .btn {
     background-color: transparent;
 }
 .btn-link {
-    font-weight: 400;
+    font-weight: 600;
     color: #0d6efd;
     text-decoration: underline;
 }
@@ -3553,7 +3554,7 @@ fieldset:disabled .btn {
     width: 100%;
     padding: 0.25rem 1rem;
     clear: both;
-    font-weight: 400;
+    font-weight: 600;
     color: #212529;
     text-align: inherit;
     text-decoration: none;
@@ -3864,7 +3865,7 @@ fieldset:disabled .btn {
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
-    line-height: 1;
+    line-height: 34px;
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 0.25rem;
@@ -4638,8 +4639,8 @@ fieldset:disabled .btn {
     display: inline-block;
     padding: 0.35em 0.65em;
     font-size: 0.75em;
-    font-weight: 700;
-    line-height: 1;
+    font-weight: 600;
+    line-height: 34px;
     color: #fff;
     text-align: center;
     white-space: nowrap;
@@ -4664,7 +4665,7 @@ fieldset:disabled .btn {
     color: inherit;
 }
 .alert-link {
-    font-weight: 700;
+    font-weight: 600;
 }
 .alert-dismissible {
     padding-right: 3rem;
@@ -5298,7 +5299,7 @@ fieldset:disabled .btn {
 }
 .modal-title {
     margin-bottom: 0;
-    line-height: 1.5;
+    line-height: 34px;
 }
 .modal-body {
     position: relative;
@@ -5480,10 +5481,10 @@ fieldset:disabled .btn {
     z-index: 1080;
     display: block;
     margin: 0;
-    font-family: var(--bs-font-sans-serif);
+    font-family: 'Plus Jakarta Sans' !important;;
     font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 600;
+    line-height: 34px;
     text-align: left;
     text-align: start;
     text-decoration: none;
@@ -5588,10 +5589,10 @@ fieldset:disabled .btn {
     z-index: 1070;
     display: block;
     max-width: 276px;
-    font-family: var(--bs-font-sans-serif);
+    font-family: 'Plus Jakarta Sans' !important;;
     font-style: normal;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 600;
+    line-height: 34px;
     text-align: left;
     text-align: start;
     text-decoration: none;
@@ -6012,7 +6013,7 @@ fieldset:disabled .btn {
 }
 .offcanvas-title {
     margin-bottom: 0;
-    line-height: 1.5;
+    line-height: 34px;
 }
 .offcanvas-body {
     flex-grow: 1;
@@ -7040,7 +7041,7 @@ fieldset:disabled .btn {
     padding-left: 3rem !important;
 }
 .font-monospace {
-    font-family: var(--bs-font-monospace) !important;
+    font-family: 'Plus Jakarta Sans' !important;
 }
 .fs-1 {
     font-size: calc(1.375rem + 1.5vw) !important;
@@ -7067,31 +7068,31 @@ fieldset:disabled .btn {
     font-style: normal !important;
 }
 .fw-light {
-    font-weight: 300 !important;
+    font-weight: 600;
 }
 .fw-lighter {
     font-weight: lighter !important;
 }
 .fw-normal {
-    font-weight: 400 !important;
+    font-weight: 600;
 }
 .fw-bold {
-    font-weight: 700 !important;
+    font-weight: 600;
 }
 .fw-bolder {
     font-weight: bolder !important;
 }
 .lh-1 {
-    line-height: 1 !important;
+    line-height: 34px;
 }
 .lh-sm {
-    line-height: 1.25 !important;
+    line-height: 34px;
 }
 .lh-base {
-    line-height: 1.5 !important;
+    line-height: 34px;
 }
 .lh-lg {
-    line-height: 2 !important;
+    line-height: 34px;
 }
 .text-start {
     text-align: left !important;

@@ -42,7 +42,7 @@
     <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 		<div class="container">
-			<a class="navbar-brand" href="/index">GreenGlow X Rancakalong<span>.</span></a>
+			<a class="navbar-brand" href="/home">GreenGlow X Rancakalong<span>.</span></a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -51,13 +51,13 @@
 			<div class="collapse navbar-collapse" id="navbarsFurni">
 				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
 					<li class="nav-item active">
-						<a class="nav-link" href="/index">Home</a>
+						<a class="nav-link" href="home">Home</a>
 					</li>
 					<li><a class="nav-link" href="shop">Shop</a></li>
-					<li><a class="nav-link" href="about">About GreenGlow</a></li>
+					<!-- <li><a class="nav-link" href="about">About GreenGlow</a></li> -->
 					<li><a class="nav-link" href="rancakalong">About Rancakalong</a></li>
-					<li><a class="nav-link" href="blog">Edu</a></li>
-					<li><a class="nav-link" href="contact">Contact us</a></li>
+					<!-- <li><a class="nav-link" href="blog">Edu</a></li> -->
+					<!-- <li><a class="nav-link" href="contact">Contact us</a></li> -->
 					<li><a class="nav-link" href="/">Logout</a></li>
 				</ul>
 
@@ -248,10 +248,10 @@
                                         <div class="maincontainer">
                                             <div class="thecard">
                                                 <div class="thefront">
-                                                    <a class="product-item" href="cart.html">
+                                                    <div class="product-item" >
                                                         <img src="images/produk2.png" class="img-fluid product-thumbnail">
                                                         <h3 class="product-title">Natural Dish Soap</h3>
-                                                    </a>
+                                                    </div>
                                                 </div>
                                                 <div class="theback">
                                                     <div class="product-container" style="background-image: url('images/produk2.png'); border-radius: 5px; position: relative; overflow: hidden;">
@@ -282,10 +282,10 @@
                                         <div class="maincontainer">
                                             <div class="thecard">
                                                 <div class="thefront">
-                                                    <a class="product-item" href="cart.html">
+                                                    <div class="product-item">
                                                         <img src="images/produk1.png" class="img-fluid product-thumbnail">
                                                         <h3 class="product-title">Natural Soap with Olive Extract</h3>
-                                                    </a>
+                                                    </div>
                                                 </div>
                                                 <div class="theback">
                                                     <div class="product-container" style="background-image: url('images/produk2.png'); border-radius: 5px; position: relative; overflow: hidden;">
@@ -316,10 +316,10 @@
                                         <div class="maincontainer">
                                             <div class="thecard">
                                                 <div class="thefront">
-                                                    <a class="product-item" href="cart.html">
+                                                    <div class="product-item">
                                                         <img src="images/produk3.png" class="img-fluid product-thumbnail">
                                                         <h3 class="product-title">Natural Soap with Olive Extract</h3>
-                                                    </a>
+                                                    </div>
                                                 </div>
                                                 <div class="theback">
                                                     <div class="product-container" style="background-image: url('images/produk2.png'); border-radius: 5px; position: relative; overflow: hidden;">
@@ -408,9 +408,9 @@
                                 <img class="img-fluid" src="images/icon/icon-3.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Sustainable Packaging and its Benefits</h4>
-                            <span>by <a href="#">Dhewa Radya</a></span> <span>on <a href="#">January 1, 2023</a></span>
+                            <span>by <a href="#">Michele Carchman</a></span> <span>on <a href="#">April 5, 2016</a></span>
 							<p class="blog-post-text" style="color: black;">Sustainable Packaging has a lot of benefits for the future...</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a class="btn btn-sm" href="https://www.adecesg.com/resources/blog/the-importance-of-sustainable-packaging/"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -424,9 +424,9 @@
                                 <img class="img-fluid" src="images/icon/icon-6.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Best Materials for Recyclable Packaging</h4>
-                            <span>by <a href="#">Alfi Ahmad</a></span> <span>on <a href="#">January 5, 2023</a></span>
+                            <span>by <a href="#">Francesca Nicasio</a></span> <span>on <a href="#">September 13, 2021</a></span>
 							<p class="blog-post-text">Creating Recyclable packaging isn't easy...</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a class="btn btn-sm" href="https://noissue.co/blog/environmentally-friendly-packaging-materials/"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -440,9 +440,9 @@
                                 <img class="img-fluid" src="images/icon/icon-4.png" alt="Icon">
                             </div>
                             <h4 class="mb-3">Is Plastic Waste killing our Planet?</h4>
-                            <span>by <a href="#">Justin Surya</a></span> <span>on <a href="#">January 10, 2023</a></span>
+                            <span>by <a href="#">Tracey Chaykin</a></span> <span>on <a href="#">November 22, 2023</a></span>
 							<p class="blog-post-text">Plastic Waste is becoming more unmanagable in recent...</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            <a class="btn btn-sm" href="https://medium.com/@tatthebrat/how-plastic-pollution-is-killing-our-planet-and-what-we-can-do-to-save-it-70054ce47ad8"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
                         </div>
                     </div>
                 </div>

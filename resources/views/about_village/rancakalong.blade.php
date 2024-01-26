@@ -15,6 +15,9 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link href="{{ asset('css/tiny-slider.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+	<!-- <link href="{{ asset('css/style-event.css') }}" rel="stylesheet"> -->
+	<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/swiper.min.css') }}" rel="stylesheet">
 	<script src="{{ asset('js/custom.js') }}"></script>
 	<title>Desa Rancakalong</title>
 </head>
@@ -96,7 +99,7 @@
 		<p style="color: #374B43">"We aspire to grow Rancakalong Village into a safe place yet healthy living environment for people to reside in, fostering intelligence, competitiveness, cultural richness, and virtuous value among our community."</p>
 		<div class="learn-more">
 			<a
-				href="https://jadesta.kemenparekraf.go.id/desa/rancakalong_1" target="_blank" class="btn btn-primary">Learn more about Rancakalong Village!
+				href="https://jadesta.kemenparekraf.go.id/desa/rancakalong_1" target="_blank" class="btn btn-primary" style="background: #3b5d50 !important;">Learn more about Rancakalong Village!
 				<img src="images\right-arrow-ylw.png" alt="video" style="width: 18px;">
 			</a>
 		</div>
@@ -104,151 +107,149 @@
 	</section>
 	<!-- End VisiMisi -->
 
-
-	<!-- Start Why Choose Us Section -->
-	<div class="why-choose-section">
-		<div class="container">
-			<div class="row my-5">
-				<div class="col-6 col-md-6 col-lg-3 mb-4">
-					<div class="feature">
-						<div class="icon">
-							<img src="images/truck.svg" alt="Image" class="imf-fluid">
-						</div>
-						<h3>Fast &amp; Free Shipping</h3>
-						<p>Experience the convenience of swift and cost-free delivery with our Fast & Free Shipping service. At [Your Company Name], we understand the importance of timely deliveries. From checkout to your doorstep, we ensure a seamless shipping experience that aligns with your fast-paced lifestyle. Say goodbye to delays and embrace the efficiency of our shipping solutions.</p>
-					</div>
-				</div>
-
-				<div class="col-6 col-md-6 col-lg-3 mb-4">
-					<div class="feature">
-						<div class="icon">
-							<img src="images/bag.svg" alt="Image" class="imf-fluid">
-						</div>
-						<h3>Easy to Shop</h3>
-						<p>Shopping made simple and enjoyable – that's our commitment to you. Navigate our user-friendly website or visit our store, where a curated selection awaits. At [Your Company Name], we believe that the shopping experience should be as delightful as the products themselves. Explore with ease and shop with confidence, knowing that simplicity is the key to a satisfying purchase.</p>
-					</div>
-				</div>
-
-				<div class="col-6 col-md-6 col-lg-3 mb-4">
-					<div class="feature">
-						<div class="icon">
-							<img src="images/support.svg" alt="Image" class="imf-fluid">
-						</div>
-						<h3>24/7 Support</h3>
-						<p>Your satisfaction is our priority, and that's why we offer round-the-clock support. Whether you have questions about our products, need assistance with an order, or simply seek guidance, our dedicated support team is here for you 24/7. At [Your Company Name], customer support isn't just a service – it's a commitment to ensuring your peace of mind at any hour.</p>
-					</div>
-				</div>
-
-				<div class="col-6 col-md-6 col-lg-3 mb-4">
-					<div class="feature">
-						<div class="icon">
-							<img src="images/return.svg" alt="Image" class="imf-fluid">
-						</div>
-						<h3>Hassle Free Returns</h3>
-						<p>We understand that sometimes things don't go as planned. That's why we've made our returns process as hassle-free as possible. If you're not completely satisfied with your purchase, our straightforward returns policy allows you to return items effortlessly. At [Your Company Name], we believe in making every aspect of your shopping experience enjoyable, including the returns process.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Why Choose Us Section -->
-
-	<!-- Start Testimonial Slider -->
-	<div class="testimonial-section before-footer-section">
-		<div class="container">
+<!-- Start event -->
+<div class="homepage-next-events">
+	<div class="container">
 			<div class="row">
-				<div class="col-lg-7 mx-auto text-center">
-					<h2 class="section-title">Testimonials</h2>
-				</div>
-			</div>
-
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="testimonial-slider-wrap text-center">
-
-						<div id="testimonial-nav">
-							<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
-							<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
-						</div>
-
-						<div class="testimonial-slider">
-
-							<div class="item">
-								<div class="row justify-content-center">
-									<div class="col-lg-8 mx-auto">
-
-										<div class="testimonial-block text-center">
-											<blockquote class="mb-5">
-												<p>&ldquo;I have been using GreenGlow's natural soap for quite some time, and I must say it's a game-changer in the world of personal care. What sets GreenGlow apart is not just its commitment to providing a top-notch product, but its dedication to embracing the circular economy through recycled waste. It's more than just soap; it's a step towards a sustainable future.&rdquo;</p>
-											</blockquote>
-
-											<div class="author-info">
-												<div class="author-pic">
-													<img src="images/pp-2.png" alt="Jared Peto" class="img-fluid">
-												</div>
-												<h3 class="font-weight-bold">Jared Peto</h3>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<!-- END item -->
-
-							<div class="item">
-								<div class="row justify-content-center">
-									<div class="col-lg-8 mx-auto">
-
-										<div class="testimonial-block text-center">
-											<blockquote class="mb-5">
-												<p>&ldquo;Knowing that the soap I use contributes to the circular economy by utilizing recycled waste is truly empowering. GreenGlow's innovative approach from Rancakalong Village is not just distinctive; it's a beacon for a more eco-friendly and responsible lifestyle.&rdquo;</p>
-											</blockquote>
-
-											<div class="author-info">
-												<div class="author-pic">
-													<img src="images/pp-1.png" alt="Mario Oza" class="img-fluid">
-												</div>
-												<h3 class="font-weight-bold">Mario Oza</h3>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<!-- END item -->
-
-							<div class="item">
-								<div class="row justify-content-center">
-									<div class="col-lg-8 mx-auto">
-
-										<div class="testimonial-block text-center">
-											<blockquote class="mb-5">
-												<p>&ldquo;The soap itself is a testament to quality and care. The natural ingredients leave my skin feeling refreshed and nourished, a stark contrast to the harsh chemicals found in many conventional products. The delightful fragrance, coupled with the knowledge that it's made with a commitment to sustainability, makes every use a mindful and satisfying experience.&rdquo;</p>
-											</blockquote>
-
-											<div class="author-info">
-												<div class="author-pic">
-													<img src="images/pp-3.png" alt="Kosimin Apk" class="img-fluid">
-												</div>
-												<h3 class="font-weight-bold">Kosimin Apk</h3>
-											</div>
-										</div>
-
-									</div>
-								</div>
-							</div>
-							<!-- END item -->
-
-						</div>
-
+					<div class="next-events-section-header">
+							<h2 class="entry-title">Upcoming Events</h2>
+							<p>Join us for a series of thrilling events that promise to make Rancakalong Village come alive! Experience the vibrant atmosphere as we bring you engaging activities and cultural festivities. There's always something for everyone.</p>
 					</div>
-				</div>
 			</div>
-		</div>
+
+			<div class="row">
+					<div class="col-12 col-sm-6 col-md-4">
+							<div class="next-event-wrap">
+									<figure>
+											<a href="#"><img src="images/ngalaksa.jpg" alt="1"></a>
+
+											<div class="event-rating">8.9</div>
+									</figure>
+
+									<div class="entry-header">
+											<h1 class="entry-title">Upacara Adat Ngalaksa</h1>
+											<div class="posted-date">Tuesday <span>Jan 30, 2024</span></div>
+									</div>
+
+									<div class="entry-content">
+											<p>Ngalaksa, a traditional ceremony in Indonesia, is celebrated through the captivating artistry of its namesake dance, showcasing cultural richness and storytelling.</p>
+									</div>
+
+									<footer class="entry-footer">
+											<a href="#">Make a visit</a>
+									</footer>
+							</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4">
+							<div class="next-event-wrap">
+									<figure>
+											<a href="#"><img src="images/geoteater.jpg" alt="1"></a>
+
+											<div class="event-rating">7.9</div>
+									</figure>
+
+									<div class="entry-header">
+											<h3 class="entry-title">Peresmian Geo-Teater</h3>
+
+											<div class="posted-date">Friday <span>Feb 23, 2024</span></div>
+									</div>
+
+									<div class="entry-content">
+											<p>Experience the grand inauguration of Geo Theater Rancakalong, a groundbreaking venue where technology meets the arts.</p>
+									</div>
+
+									<footer class="entry-footer">
+											<a href="#">Make a visit</a>
+									</footer>
+							</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4">
+							<div class="next-event-wrap">
+									<figure>
+											<a href="#"><img src="images/desawisata.jpg" alt="1"></a>
+
+											<div class="event-rating">9.9</div>
+									</figure>
+
+									<div class="entry-header">
+											<h3 class="entry-title">Desa Wisata Rancakalong</h3>
+
+											<div class="posted-date">Every <span>weekend</span></div>
+									</div>
+
+									<div class="entry-content">
+											<p>Feel the breeze at Rancakalong Village every weekend! Enjoy the warmness of the people accompanied by those delicating dishes with a view of fields.</p>
+									</div>
+
+									<footer class="entry-footer">
+											<a href="#">Make a visit</a>
+									</footer>
+							</div>
+					</div>
+			</div>
 	</div>
-	<!-- End Testimonial Slider -->
+</div>
+<!-- end event -->
+
+<!-- Start gallery -->
+<section style="min-height: 100vh; margin-top: 100px;">
+	<div class="text" style="margin-left: 50px;">
+				<h2 style="color: #374B43;">Rancakalong's Gallery</h2>
+				<div class="gallery-area fix">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="gallery-box">
+                        <div class="single-gallery">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery1.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="gallery-box">
+                        <div class="single-gallery">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery2.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="gallery-box">
+                        <div class="single-gallery">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery3.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="gallery-box">
+                        <div class="single-gallery">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery4.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="gallery-box">
+                        <div class="single-gallery">
+                             <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery5.png);"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="gallery-box">
+                        <div class="single-gallery">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery6.png);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+</section>
 
 
+<!-- End gallert -->
 
 	<!-- Start Footer Section -->
 	<footer class="footer-section">

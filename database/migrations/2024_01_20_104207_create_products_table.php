@@ -21,6 +21,8 @@ return new class extends Migration
             $table->json('tags');
             $table->string('kategori');
             $table->text('deskripsi') -> nullable();
+            $table->text('linktoko');
+            $table->text('linkshop');
             $table->boolean('statusPosting') -> default(false);
             $table->timestamps();
         });

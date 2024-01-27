@@ -84,6 +84,12 @@ class ProductResource extends Resource
                     MarkdownEditor::make('deskripsi')
                         ->columnSpanFull(),
 
+                    TextInput::make('linktoko')
+                        ->required(),
+
+                    TextInput::make('linkshop')
+                        ->required(),
+
                     FileUpload::make('gambar')
                         ->required()
                         ->disk('public')
@@ -139,6 +145,8 @@ class ProductResource extends Resource
                 -> searchable()
                 -> toggleable(),
                 TextColumn::make('deskripsi'),
+                TextColumn::make('linktoko'),
+                TextColumn::make('linkshop'),
                 CheckboxColumn::make('statusPosting'),
                 TextColumn::make('created_at')
                 -> label('tanggal dibuat')

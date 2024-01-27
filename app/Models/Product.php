@@ -9,7 +9,7 @@ class Product extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['gambar' , 'nama', 'slug', 'harga','stok', 'tags' , 'kategori' , 'deskripsi' , 'statusPosting'];
+    protected $fillable = ['gambar' , 'nama', 'slug', 'harga','stok', 'tags' , 'kategori' , 'deskripsi' , 'linktoko' , 'linkshop' , 'statusPosting'];
 
     protected $casts = [
         'tags' => 'array',

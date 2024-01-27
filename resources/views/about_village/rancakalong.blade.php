@@ -15,10 +15,20 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link href="{{ asset('css/tiny-slider.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
-	<!-- <link href="{{ asset('css/style-event.css') }}" rel="stylesheet"> -->
 	<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/swiper.min.css') }}" rel="stylesheet">
 	<script src="{{ asset('js/custom.js') }}"></script>
+	<link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/slicknav.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/flaticon.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/gijgo.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/animate.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/fontawesome-all.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/themify-icons.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/slick.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/nice-select.css') }}" rel="stylesheet">
+	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 	<title>Desa Rancakalong</title>
 </head>
 
@@ -36,12 +46,9 @@
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
 						<li><a class="nav-link" href="/index">Home</a></li>
 						<li><a class="nav-link" href="shop">Shop</a></li>
-						<li><a class="nav-link" href="about">About GreenGlow</a></li>
 						<li class="nav-item active">
 							<a class="nav-link" href="rancakalong">About Rancakalong</a>
 						</li>
-						<li><a class="nav-link" href="blog">Edu</a></li>
-						<li><a class="nav-link" href="contact">Contact us</a></li>
 						<li><a class="nav-link" href="/">Logout</a></li>
 					</ul>
 				</div>
@@ -123,7 +130,7 @@
 									<figure>
 											<a href="#"><img src="images/ngalaksa.jpg" alt="1"></a>
 
-											<div class="event-rating">8.9</div>
+											<!-- <div class="event-rating">8.9</div> -->
 									</figure>
 
 									<div class="entry-header">
@@ -146,7 +153,7 @@
 									<figure>
 											<a href="#"><img src="images/geoteater.jpg" alt="1"></a>
 
-											<div class="event-rating">7.9</div>
+											<!-- <div class="event-rating">7.9</div> -->
 									</figure>
 
 									<div class="entry-header">
@@ -170,7 +177,7 @@
 									<figure>
 											<a href="#"><img src="images/desawisata.jpg" alt="1"></a>
 
-											<div class="event-rating">9.9</div>
+											<!-- <div class="event-rating">9.9</div> -->
 									</figure>
 
 									<div class="entry-header">
@@ -203,14 +210,14 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery1.png);"></div>
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery1.png)url;"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery2.png);"></div>
+													<div class="gallery-img" style="background-image: url('{{ asset('images/blog-1.jpg') }}');"></div>
                         </div>
                     </div>
                 </div>
@@ -247,40 +254,79 @@
     </div>
 	</div>
 </section>
+<!-- End gallery -->
+
+<!-- Start contact & map -->
+<section style="min-height: 100vh; margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+				<div class="text" style="margin-left: 50px;">
+                    <h2 style="color: #374B43; text-align:center; margin-bottom: 50px;">Contact and Visit Us!</h2>
+                </div>
+            <div class="col-lg-6">
+                <!-- Embed the map on the left side -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.3642349445563!2d107.8365106!3d-6.8356899!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d9f51318a2e1%3A0x4a5dbeb987e8c636!2sPolsek%20Rancakalong!5e0!3m2!1sen!2sid!4v1706353774066!5m2!1sen!2sid" width="100%" height="425" style="border:10px; margin-left:75px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6">
+                <div id="contact-here" class="untree_co-section" style="margin-top: -50px;">
+                    <div class="container">
+
+                        <div class="block">
+                            <div class="row justify-content-center">
 
 
-<!-- End gallert -->
+                                <div class="col-md-8 col-lg-8 pb-4">
+
+
+                                    <div class="row mb-5">
+                                        <!-- Your contact information here -->
+                                    </div>
+
+                                    <form action="https://formsubmit.co/greenglow.id@gmail.com" method="POST" class="border p-4 rounded shadow" reset() return False>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label class="text-black" for="fname">First name</label>
+                                                    <input type="text" class="form-control" id="fname">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label class="text-black" for="lname">Last name</label>
+                                                    <input type="text" class="form-control" id="lname">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="text-black" for="email">Email address</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+
+                                        <div class="form-group mb-5">
+                                            <label class="text-black" for="message">Message</label>
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Hi GreenGlow, "></textarea>
+                                        </div>
+
+                                        <div class="text">
+                                            <button type="submit" class="btn" style="margin-top: -50px; background-color:#374B43">Send Message</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 	<!-- Start Footer Section -->
 	<footer class="footer-section">
 		<div class="container relative">
-
-			<div class="sofa-img">
-				<img src="images/soap1.png" alt="Image" class="img-fluid" style="min-height: 120%; min-width: 120%">
-			</div>
-
-			<!-- <div class="row">
-					<div class="col-lg-8">
-						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
-
-							<form action="#" class="row g-3">
-								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Enter your name">
-								</div>
-								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Enter your email">
-								</div>
-								<div class="col-auto">
-									<button class="btn btn-primary">
-										<span class="fa fa-paper-plane"></span>
-									</button>
-								</div>
-							</form>
-
-						</div>
-					</div>
-				</div> -->
 
 			<div class="row g-5 mb-5">
 				<div class="col-lg-4">

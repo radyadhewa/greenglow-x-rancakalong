@@ -81,6 +81,7 @@ header.fixed-header {
 
 .text button:hover{
     letter-spacing: 6px;
+    color: white;
     background: #3b5d50;
     border-color: #3b5d50;
 }

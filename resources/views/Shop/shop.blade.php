@@ -40,7 +40,7 @@
     <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
         <div class="container">
-            <a class="navbar-brand" href="/index">GreenGlow X Rancakalong<span>.</span></a>
+            <a class="navbar-brand" href="/index"> <img src="images\gglogolight.png" alt="GreenGlow x Rancakalong" style="max-height: 50px;"> <span>.</span></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
                 aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,15 +49,11 @@
 
             <div class="collapse navbar-collapse" id="navbarsFurni">
                 <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li><a class="nav-link" href="home">Home</a></li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/index">Home</a>
+                        <a class="nav-link" href="shop">Shop</a>
                     </li>
-                    <li><a class="nav-link" href="shop">Shop</a></li>
-                    <li><a class="nav-link" href="about">About GreenGlow</a></li>
                     <li><a class="nav-link" href="rancakalong">About Rancakalong</a></li>
-                    <li><a class="nav-link" href="blog">Edu</a></li>
-                    <li><a class="nav-link" href="contact">Contact us</a></li>
-                    <li><a class="nav-link" href="/">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -68,12 +64,10 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-3 text-white mb-4 animated slideInDown">Services</h1>
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Shop Our Products</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Services</li>
+                    <li class="breadcrumb-item"><a href="#">made with love in Rancakalong</a></li>
                 </ol>
             </nav>
         </div>
@@ -111,23 +105,49 @@
     <!-- Service End -->
 
 
+    <br><br><br>
     <!-- Start Footer Section -->
     <footer class="footer-section" style="background-color: #eff2f1;">
         <div class="container relative">
 
             <div class="sofa-img">
-                <img src="images/soap1.png" alt="Image" class="img-fluid"
-                    style="min-height: 120%; min-width: 120%">
+                <img src="images/soap1.png" alt="Image" class="img-fluid" style="min-height: 120%; min-width: 120%">
             </div>
+
+            <!-- <div class="row">
+                    <div class="col-lg-8">
+                        <div class="subscription-form">
+                            <h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
+
+                            <form action="#" class="row g-3">
+                                <div class="col-auto">
+                                    <input type="text" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="col-auto">
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="col-auto">
+                                    <button class="btn btn-primary">
+                                        <span class="fa fa-paper-plane"></span>
+                                    </button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div> -->
 
             <div class="row g-5 mb-5">
                 <div class="col-lg-4">
-                    <div class="mb-4 footer-logo-wrap"><a href="#"
-                            class="footer-logo">GreenGlow<span>.</span></a></div>
-                    <p class="mb-4">Embraces a zero-waste ethos by offering a range of beauty and soap products made
-                        from natural ingredients, packaged in materials sourced from recycling. With a commitment to
-                        sustainability, the project seeks to minimize environmental impact by avoiding synthetic
-                        additives and utilizing recycled packaging. </p>
+                    <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">GreenGlow<span>.</span></a></div>
+                    <p class="mb-4">Embraces a zero-waste ethos by offering a range of beauty and soap products made from natural ingredients, packaged in materials sourced from recycling. With a commitment to sustainability, the project seeks to minimize environmental impact by avoiding synthetic additives and utilizing recycled packaging. </p>
+
+                    <!-- <ul class="list-unstyled custom-social">
+                        <li><a href="https://www.youtube.com/watch?v=8ZsRryHYBwg" target="_blank">
+                                <span class="fa fa-brands fa-youtube"></span>
+                            </a></span></a>
+                        </li>
+                    </ul> -->
                 </div>
 
                 <div class="col-lg-8">
@@ -160,11 +180,9 @@
             <div class="border-top copyright">
                 <div class="row pt-4">
                     <div class="col-lg-6">
-                        <p class="mb-2 text-center text-lg-start">Copyright &copy;
-                            <script>
+                        <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>
                                 document.write(new Date().getFullYear());
-                            </script>. All Rights Reserved. &mdash; Designed with love by <a
-                                href="">GreenGlow</a> Distributed By <a href="">GreenGlow</a>
+                            </script>. All Rights Reserved. &mdash; Designed with love by <a href="">GreenGlow</a> Distributed By <a href="">GreenGlow</a>
                         </p>
                     </div>
 

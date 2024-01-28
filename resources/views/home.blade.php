@@ -42,7 +42,7 @@
     <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 		<div class="container">
-			<a class="navbar-brand" href="/home">GreenGlow X Rancakalong<span>.</span></a>
+			<a class="navbar-brand" href="/index"> <img src="images\gglogolight.png" alt="GreenGlow x Rancakalong" style="max-height: 50px;"> <span>.</span></a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -58,7 +58,6 @@
 					<li><a class="nav-link" href="rancakalong">About Rancakalong</a></li>
 					<!-- <li><a class="nav-link" href="blog">Edu</a></li> -->
 					<!-- <li><a class="nav-link" href="contact">Contact us</a></li> -->
-					<li><a class="nav-link" href="/">Logout</a></li>
 				</ul>
 
 				<!-- <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
@@ -239,7 +238,7 @@
                                     <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
                                         <h2 class="mb-4 section-title">Crafted with Natural and Pure Ingredients.</h2>
                                         <p class="mb-4">GreenGlow supports sustainability by using recycled oil and natural ingredients to produce our products</p>
-                                        <a href="" class="btn btn-primary py-sm-3 px-sm-4">Buy GreenGlow</a>
+                                        <a href="shop" class="btn btn-primary py-sm-3 px-sm-4">Buy GreenGlow</a>
                                     </div>
                                     <!-- End Column 1 -->
 
@@ -262,7 +261,7 @@
                                                             <p class="section-subtitle">Gentle, Effective, and Eco-Friendly Sparkle</p>
 
                                                             <div class="ingredients-container" style="text-align: left; margin-top: 20px;">
-                                                                <h5 class="mt-4">Ingredients</h5>
+                                                                <h5 class="mt-4" style="color: #cbcbcb">Ingredients</h5>
                                                                 <ul class="list-group" style="list-style: none; padding: 0;">
                                                                     <li class="list-group-item" style="background-color: #e9852e;">Sweet Potato</li>
                                                                     <li class="list-group-item" style="background-color: #f8c144;">Orange Extract</li>
@@ -296,7 +295,7 @@
                                                             <p class="section-subtitle">Gentle, Effective, and Eco-Friendly Sparkle</p>
 
                                                             <div class="ingredients-container" style="text-align: left; margin-top: 20px;">
-                                                                <h5 class="mt-4">Ingredients</h5>
+                                                                <h5 class="mt-4" style="color: #cbcbcb">Ingredients</h5>
                                                                 <ul class="list-group" style="list-style: none; padding: 0;">
                                                                     <li class="list-group-item" style="background-color: #bfa82f;">Olive</li>
                                                                     <li class="list-group-item" style="background-color: white;">Goat Milk</li>
@@ -330,7 +329,7 @@
                                                             <p class="section-subtitle">Gentle, Effective, and Eco-Friendly Sparkle</p>
 
                                                             <div class="ingredients-container" style="text-align: left; margin-top: 20px;">
-                                                                <h5 class="mt-4">Ingredients</h5>
+                                                                <h5 class="mt-4" style="color: #cbcbcb">Ingredients</h5>
                                                                 <ul class="list-group" style="list-style: none; padding: 0;">
                                                                     <li class="list-group-item" style="background-color: white">Goat Milk</li>
                                                                     <li class="list-group-item" style="background-color: #cbcbcb;">Kaolin Clay</li>

@@ -17,7 +17,7 @@ class HomeController extends Controller
   }
   public function rancakalong()
   {
-    return view('rancakalong');
+    return view('about_village.rancakalong');
   }
   public function blog()
   {

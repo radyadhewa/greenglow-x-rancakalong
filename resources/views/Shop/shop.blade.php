@@ -12,9 +12,12 @@
 
 	<!-- Bootstrap CSS -->
 	<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+	{{-- <link href="{{ asset('css/bs.min.css') }}" rel="stylesheet"> --}}
+
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 	<link href="{{ asset('css/tiny-slider.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+	{{-- <link href="{{ asset('css/style2.css') }}" rel="stylesheet"> --}}
 	<title>GreenGlow - Shop</title>
 </head>
 
@@ -62,7 +65,7 @@
 							<div class="col-lg-8">
 								<video src="images/cinematic.mp4" class="d-block w-100 border rounded" autoplay muted></video>
 							</div>
-							<!-- <div id="carouselExampleAutoplaying" class="carousel slide col-lg-4" data-bs-ride="carousel">
+							 <div id="carouselExampleAutoplaying" class="carousel slide col-lg-4" data-bs-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active ">
 								<img src="images/produk1.png" class="d-block w-50" alt="...">
@@ -107,132 +110,47 @@
 			</div> -->
 	<!-- End Hero Section -->
 
-
-
-	<div class="untree_co-section product-section before-footer-section">
+	<section class="ftco-section bg-light-new">
 		<div class="container">
-			<div class="row">
+			<div class="row-new">
 
-				<!-- Start Column 1 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5">
-					<a class="product-item" href="#" onclick="addToCart()">
-						<img src="images/produk1.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Soap with Olive Extract</h3>
-						<strong class="product-price">Rp50.000</strong>
-
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
+                @foreach ($produk as $p)
+				<div class="col-md-4-new">
+					<div class="car-wrap rounded ftco-animate">
+						<div class="img rounded d-flex align-items-end"
+							style="background-image: url({{Storage::url($p-> gambar)}});">
+						</div>
+						<div class="text">
+							<h2 class="mb-0"><a href="#">{{$p -> nama}}</a></h2>
+							<div class="d-flex mb-3">
+								<p class="price ml-auto">Rp{{$p -> harga}}</p>
+							</div>
+							<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Tokopedia</a> <a
+									href="#" class="btn btn-secondary py-2 ml-1">Shopee</a></p>
+						</div>
+					</div>
 				</div>
-
-				<script>
-					function addToCart() {
-						// Add your logic here to handle adding the product to the cart
-
-						// Show a simple popup
-						alert("Product added to cart");
-					}
-				</script>
-				<!-- End Column 1 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5">
-					<a class="product-item" href="#" onclick="addToCart()">
-						<img src="images/produk3.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Soap with Goat Milk</h3>
-						<strong class="product-price">Rp55.000</strong>
-
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
-				</div>
-				<!-- End Column 3 -->
-
-				<!-- Start Column 4 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5">
-					<a class="product-item" href="#">
-						<img src="images/produk4.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Soap with Lavender Extract</h3>
-						<strong class="product-price">Rp50.000</strong>
-
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
-				</div>
-				<!-- End Column 4 -->
-
-				<!-- Start Column 2 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5">
-					<a class="product-item" href="#">
-						<img src="images/produk2.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Dish Soap</h3>
-						<strong class="product-price">Rp35.000</strong>
-
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
-				</div>
-				<!-- End Column 2 -->
-
-				<!-- Start Column 1 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5">
-					<a class="product-item" href="#">
-						<img src="images/produk1.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Soap with Olive Extract</h3>
-						<strong class="product-price">Rp50.000</strong>
-
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
-				</div>
-				<!-- End Column 1 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5">
-					<a class="product-item" href="#">
-						<img src="images/produk3.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Soap with Goat Milk</h3>
-						<strong class="product-price">Rp55.000</strong>
-
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
-				</div>
-				<!-- End Column 3 -->
-
-				<!-- Start Column 4 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5">
-					<a class="product-item" href="#">
-						<img src="images/produk4.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Soap with Lavender Extract</h3>
-						<strong class="product-price">Rp50.000</strong>
-
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
-				</div>
-				<!-- End Column 4 -->
-
-				<!-- Start Column 2 -->
-				<div class="col-12 col-md-4 col-lg-3 mb-5">
-					<a class="product-item" href="#">
-						<img src="images/produk2.png" class="img-fluid product-thumbnail">
-						<h3 class="product-title">Natural Dish Soap</h3>
-						<strong class="product-price">Rp35.000</strong>
-
-						<span class="icon-cross">
-							<img src="images/cross.svg" class="img-fluid">
-						</span>
-					</a>
-				</div>
-				<!-- End Column 2 -->
+                @endforeach
 
 			</div>
+
+			<div class="row-new mt-5">
+				<div class="col-new text-center">
+					<div class="block-27">
+						<ul>
+							<li><a href="#">&lt;</a></li>
+							<li class="active"><span>1</span></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li><a href="#">&gt;</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
 
 
 	<!-- Start Footer Section -->
@@ -330,9 +248,11 @@
 	<!-- End Footer Section -->
 
 
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/tiny-slider.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="{{ asset ('js/bootstrap.bundle.min.js')}}"></script>
+	{{-- <script src="{{ asset ('js/bs.min.js')}}"></script> --}}
+	<script src="{{ asset ('js/tiny-slider.js')}}"></script>
+	<script src="{{ asset ('js/custom.js')}}"></script>
+	{{-- <script src="{{ asset ('js/ucuk.js')}}"></script> --}}
 </body>
 
 </html>

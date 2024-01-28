@@ -31,7 +31,7 @@
 			</button>
 			<div class="navbar" id="navbarsFurni">
 				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-					<li><a class="nav-link" href="/" style="font-size: large;">Login</a></li>
+					<li><a class="nav-link" href="{{ route ('register.form')}}" style="font-size: large;">Register</a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,36 +45,33 @@
 		<h4 class="mt-0" style="color: whitesmoke;">Rancakalong Village, West Java</h4>
 		<p class="mb-4">Glow with naturally crafted soap made from recycled oil and pure ingredients.</p>
 		<div class="container-fluid mt--2">
+
 			<div class="row justify-content-center">
 				<div class="col-lg-4">
 					<div class="card bg-dark text-center p-5">
-						<form action="/" method="post">
+						<form action="{{ route ('login.store')}}" method="POST">
 							@csrf
 							<?php
 
 							use Illuminate\Support\Facades\Session;
 							// Get values from the session or any other source
-							$usernameFromSession = Session::get('Username');
-							$emailFromSession = Session::get('Email');
+							$emailFromSession = Session::get('email');
 							?>
 							<div class="form-group mb-3 mt-3">
 								<div class="input-group input-group-alternative">
-									<input class="form-control" placeholder="Username" name="Username" type="text" required value="<?= $usernameFromSession ?>" />
+									<input class="form-control" placeholder="Email" name="email" type="text" required value="<?= $emailFromSession ?>" />
 								</div>
-							</div>
-							<div class="form-group mb-3 mt-3">
 
-								<div class="input-group input-group-alternative">
-									<input class="form-control" placeholder="Email" type="email" name="Email" required value="<?= $emailFromSession ?>" />
-								</div>
 							</div>
 							<div class="form-group">
 								<div class="input-group input-group-alternative">
-									<input class="form-control" placeholder="Password" type="password" name="Password" required />
+									<input class="form-control" placeholder="Password" name="password" type="password" required />
 								</div>
 							</div>
 							<div class="text-center mt-4">
-								<button name="submit" class="btn btn-secondary btn-icon mb-3 mb-sm-0" type="submit">Register</button>
+								<button name="submit" type="submit" class="btn btn-secondary btn-icon mb-3 mb-sm-0">
+									Sign in
+								</button>
 							</div>
 						</form>
 					</div>
@@ -112,9 +109,9 @@
 	</div>
 	</div>
 
-	<script src="resources/js/bootstrap.bundle.min.js"></script>
-	<script src="resources/js/tiny-slider.js"></script>
-	<script src="resources/js/custom.js"></script>
+	<script src="{{ asset ('js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ asset ('js/tiny-slider.js') }}"></script>
+	<script src="{{ asset ('js/custom.js') }}"></script>
 </body>
 
 </html>

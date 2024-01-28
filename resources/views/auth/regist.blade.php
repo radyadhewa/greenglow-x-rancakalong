@@ -24,14 +24,14 @@
 	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 		<div class="container">
-			<a class="navbar-brand" href="/">GreenGlow X Rancakalong<span>.</span></a>
+			<a class="navbar-brand">GreenGlow X Rancakalong<span>.</span></a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="navbar" id="navbarsFurni">
 				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-					<li><a class="nav-link" href="regist" style="font-size: large;">Register</a></li>
+					<li><a class="nav-link" href="{{route ('login.form') }}" style="font-size: large;">Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,33 +45,37 @@
 		<h4 class="mt-0" style="color: whitesmoke;">Rancakalong Village, West Java</h4>
 		<p class="mb-4">Glow with naturally crafted soap made from recycled oil and pure ingredients.</p>
 		<div class="container-fluid mt--2">
-
 			<div class="row justify-content-center">
 				<div class="col-lg-4">
 					<div class="card bg-dark text-center p-5">
-						<form action="index" method="post">
+						<form action="{{route ('register.store')}}" method="POST">
 							@csrf
 							<?php
 
 							use Illuminate\Support\Facades\Session;
 							// Get values from the session or any other source
-							$usernameFromSession = Session::get('Username');
+							$usernameFromSession = Session::get('name');
+							$emailFromSession = Session::get('email');
 							?>
 							<div class="form-group mb-3 mt-3">
 								<div class="input-group input-group-alternative">
-									<input class="form-control" placeholder="Username" name="Username" type="text" required value="<?= $usernameFromSession ?>" />
+									<!-- name itu harus sama ma field yang ada di database -->
+									<input class="form-control" placeholder="Username" name="name" type="text" required value="<?= $usernameFromSession ?>" />
 								</div>
+							</div>
+							<div class="form-group mb-3 mt-3">
 
+								<div class="input-group input-group-alternative">
+									<input class="form-control" placeholder="Email" type="email" name="email" required value="<?= $emailFromSession ?>" />
+								</div>
 							</div>
 							<div class="form-group">
 								<div class="input-group input-group-alternative">
-									<input class="form-control" placeholder="Password" name="Password" type="password" required />
+									<input class="form-control" placeholder="Password" type="password" name="password" required />
 								</div>
 							</div>
 							<div class="text-center mt-4">
-								<button name="submit" type="submit" class="btn btn-secondary btn-icon mb-3 mb-sm-0">
-									Sign in
-								</button>
+								<button name="submit" class="btn btn-secondary btn-icon mb-3 mb-sm-0" type="submit">Register</button>
 							</div>
 						</form>
 					</div>
@@ -109,9 +113,9 @@
 	</div>
 	</div>
 
-	<script src="resources/js/bootstrap.bundle.min.js"></script>
-	<script src="resources/js/tiny-slider.js"></script>
-	<script src="resources/js/custom.js"></script>
+	<script src="{{ asset ('js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ asset ('js/tiny-slider.js') }}"></script>
+	<script src="{{ asset ('js/custom.js') }}"></script>
 </body>
 
 </html>

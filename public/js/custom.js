@@ -351,3 +351,33 @@ function play1() {
 	}
 
 })(jQuery);
+
+$(document).ready(function() {
+	// Function to check if an element is in viewport
+	function isInViewport(element) {
+			var bounding = element.getBoundingClientRect();
+			return (
+					bounding.top >= 0 &&
+					bounding.left >= 0 &&
+					bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+					bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+			);
+	}
+
+	// Function to fade in elements when they come into view
+	function fadeInOnScroll() {
+			$('.fade-in').each(function() {
+					if (isInViewport(this)) {
+							$(this).addClass('visible');
+					}
+			});
+	}
+
+	// Fade in elements on page load
+	fadeInOnScroll();
+
+	// Fade in elements when scrolling
+	$(window).on('scroll', function() {
+			fadeInOnScroll();
+	});
+});

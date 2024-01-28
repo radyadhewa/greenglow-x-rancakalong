@@ -18,17 +18,7 @@
 	<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/swiper.min.css') }}" rel="stylesheet">
 	<script src="{{ asset('js/custom.js') }}"></script>
-	<link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/slicknav.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/flaticon.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/gijgo.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/animate.min.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/fontawesome-all.min.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/themify-icons.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/slick.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/nice-select.css') }}" rel="stylesheet">
-	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<title>Desa Rancakalong</title>
 </head>
 
@@ -37,7 +27,7 @@
 	<header>
 		<nav style="background-color: transparent !important;" class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 			<div class="container">
-				<a class="navbar-brand" href="/index">GreenGlow X Rancakalong<span>.</span></a>
+				<a class="navbar-brand" href="/index"> <img src="images\gglogolight.png" alt="GreenGlow x Rancakalong" style="max-height: 50px;"> <span>.</span></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -119,8 +109,8 @@
 	<div class="container">
 			<div class="row">
 					<div class="next-events-section-header">
-							<h2 class="entry-title">Upcoming Events</h2>
-							<p>Join us for a series of thrilling events that promise to make Rancakalong Village come alive! Experience the vibrant atmosphere as we bring you engaging activities and cultural festivities. There's always something for everyone.</p>
+							<h2 class="entry-title" style="color: #3D4A3E; font-weight:bolder">Upcoming Events</h2>
+							<p style="margin-bottom: -10px;">Join us for a series of thrilling events that promise to make Rancakalong Village come alive! Experience the vibrant atmosphere as we bring you engaging activities and cultural festivities. There's always something for everyone.</p>
 					</div>
 			</div>
 
@@ -202,50 +192,68 @@
 
 <!-- Start gallery -->
 <section style="min-height: 100vh; margin-top: 100px;">
-	<div class="text" style="margin-left: 50px;">
-				<h2 style="color: #374B43;">Rancakalong's Gallery</h2>
-				<div class="gallery-area fix">
+	<div class="text" style="margin-left: 0px;">
+				<h2 style="color: #374B43; text-align:center; margin-bottom:20px;">Rancakalong's Gallery</h2>
+				<div class="gallery-area fix" style="max-width: 90%; max-height:50%; margin: 0 auto; padding: 0 15px;">
         <div class="container-fluid p-0">
-            <div class="row no-gutters">
-                <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="row no-gutters no-padding">
+                <div class="col-lg-3 col-md-3 col-sm-6 no-padding">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery1.png)url;"></div>
+                            <div class="gallery-img ">
+															<img src="images/ngalaksa.jpg" alt="1">
+															<div class="overlay-text">Deskripsi Gambar!</div>
+														</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-3 col-sm-6 no-padding">
                     <div class="gallery-box">
                         <div class="single-gallery">
-													<div class="gallery-img" style="background-image: url('{{ asset('images/blog-1.jpg') }}');"></div>
+													<div class="gallery-img">
+														<img src="images/geoteater.jpg" alt="1">
+														<div class="overlay-text">Deskripsi Gambar!</div>
+												</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 no-padding">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery3.png);"></div>
+                            <div class="gallery-img ">
+															<img src="images/desawisata.jpg">
+															<div class="overlay-text">Deskripsi Gambar!</div>
+														</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 no-padding">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery4.png);"></div>
+                            <div class="gallery-img">
+															<img src="images/geoteater.jpg">
+															<div class="overlay-text">Deskripsi Gambar!</div>
+														</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-3 col-sm-6 no-padding">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                             <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery5.png);"></div>
+                             <div class="gallery-img">
+															<img src="images/geoteater.jpg">
+															<div class="overlay-text">Deskripsi Gambar!</div>
+														</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-3 col-sm-6 no-padding">
                     <div class="gallery-box">
                         <div class="single-gallery">
-                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery6.png);"></div>
+                            <div class="gallery-img">
+															<img src="images/sampeu.jpg">
+															<div class="overlay-text">Deskripsi Gambar!</div>
+														</div>
                         </div>
                     </div>
                 </div>
@@ -260,12 +268,12 @@
 <section style="min-height: 100vh; margin-top: 100px;">
     <div class="container">
         <div class="row">
-				<div class="text" style="margin-left: 50px;">
+				<div class="text" style="margin-left: 0px;">
                     <h2 style="color: #374B43; text-align:center; margin-bottom: 50px;">Contact and Visit Us!</h2>
                 </div>
             <div class="col-lg-6">
                 <!-- Embed the map on the left side -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.3642349445563!2d107.8365106!3d-6.8356899!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d9f51318a2e1%3A0x4a5dbeb987e8c636!2sPolsek%20Rancakalong!5e0!3m2!1sen!2sid!4v1706353774066!5m2!1sen!2sid" width="100%" height="425" style="border:10px; margin-left:75px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d321.0858437781561!2d107.83671656665805!3d-6.83575123188339!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68d9121fe2dc5d%3A0x646e653d05ba5104!2sKantor%20Kepala%20Desa%20Rancakalong!5e0!3m2!1sen!2sid!4v1706405572417!5m2!1sen!2sid" width="100%" height="425" style="border:10px; margin-left:75px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-lg-6">
                 <div id="contact-here" class="untree_co-section" style="margin-top: -50px;">
@@ -306,12 +314,17 @@
 
                                         <div class="form-group mb-5">
                                             <label class="text-black" for="message">Message</label>
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Hi GreenGlow, "></textarea>
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Halo warga Desa Rancakalong, saya ingin melakukan kunjungan nih!"></textarea>
                                         </div>
 
-                                        <div class="text">
-                                            <button type="submit" class="btn" style="margin-top: -50px; background-color:#374B43">Send Message</button>
-                                        </div>
+                                        <div class="button-container">
+																					<div class="text">
+																							<button type="submit" class="btn" style="margin-top: -50px; background-color:#374B43">Message</button>
+																					</div>
+																					<div class="text" style="margin-left: 10px;">
+																							<button type="button" onclick="window.open('https://maps.app.goo.gl/RgE1fcntpwEKffr86', '_blank')" class="btn" style="margin-top: -50px; background-color:#f9bf29">Maps</button>
+																					</div>
+																			</div>
                                     </form>
                                 </div>
                             </div>
